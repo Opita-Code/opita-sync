@@ -1,0 +1,39 @@
+# Decision log consolidado
+
+- producto final y profesional
+- motor universal de interoperabilidad empresarial operado por lenguaje natural
+- contrato de intención/inspección como unidad operativa central
+- edición controlada del contrato
+- múltiples tipos de resultado configurables
+- resultados nativos del core: plan, inspección/análisis, consulta, propuesta de cambio, ejecución, actualización en sistemas, aprobación/rechazo y reporte/evidencia
+- autonomía configurable por acción o tarea
+- tools en dos capas: acciones de negocio + sistemas base
+- estrategia ante ambigüedad: inspección -> memoria -> asumir/proponer -> preguntar crítico
+- nivel de asunción configurable
+- workflows/agentes multistep predefinidos y dinámicos
+- modelo híbrido de permisos
+- delegación explícita, temporal y permanente
+- delegación entre personas, equipos, áreas, cargos y organigrama
+- todo artefacto nace restringido por defecto
+- salida redactada/parcial cuando la salida completa no esté permitida
+- clasificación base también para acciones
+- tenant-first con memoria multi-scope
+- distintos niveles de aislamiento incluidos en el scope
+- captura analítica como parte central del core
+- policies globales del tenant con plantillas base
+- solo el superadmin configura y gestiona conectores/sistemas
+- solo el superadmin crea, edita y publica acciones/workflows del catálogo
+- sin versionado formal de acciones/workflows como parte central actual
+- cada tenant puede tener admins y subadmins
+- los admins controlan delegación y visibilidad/uso de acciones dentro de límites globales
+- lo que varía entre empresas se define al crear el tenant
+- multi-tenant nativo
+- ambientes dev, staging y prod
+- creación de tenant con mínimo duro + enriquecimiento posterior
+- organigrama no obligatorio
+- mínimo duro: admin, policies base, al menos un conector, catálogo visible inicial, reglas de aprobación base, clasificación base y memoria/contexto inicial
+- subadmins opcionales después
+- catálogo soporta acciones y workflows tipados explícitamente
+- cada item del catálogo tiene un mínimo obligatorio de campos
+- `tenant_visibility` se modela como objeto de capacidades
+- monetización híbrida
