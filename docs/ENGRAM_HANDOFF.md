@@ -85,6 +85,7 @@ Ya definidos en este repo:
 - `M5.3` definido: piloto con `tenant-alpha-ops` y `tenant-beta-governance`, escenarios, métricas y success/failure criteria
 - assets operativos del piloto versionados en `docs/PILOT_*`
 - runbook ejecutable del piloto versionado en `docs/PILOT_RUNBOOK.md`
+- primer resultado parcial del piloto versionado en `docs/PILOT_RUN_RESULTS_2026-03-31.md`
 
 ## Estado de implementación relevante
 
