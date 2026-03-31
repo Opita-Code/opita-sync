@@ -22,7 +22,7 @@ Objetivo:
 
 ## P2.3 — Conectores enterprise de mayor complejidad
 
-**Status:** open
+**Status:** implemented baseline in framework
 
 Objetivo:
 
