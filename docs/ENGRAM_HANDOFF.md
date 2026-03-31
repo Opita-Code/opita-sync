@@ -126,7 +126,7 @@ El código del framework en el repo hermano ya implementa:
 ## Estado P2 actual
 
 - `P2.1` definido: `tenant access and delegation governance`
-- `P2.2` abierto
+- `P2.2` implementado mínimamente en el framework mediante `requested_capability_id`
 - `P2.3` abierto
 
 ## AWS / plataforma

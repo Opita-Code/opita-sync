@@ -14,7 +14,7 @@ Dominio recomendado:
 
 ## P2.2 — Resolver selección dinámica de capabilities por dominio
 
-**Status:** open
+**Status:** implemented in framework (minimum dynamic override)
 
 Objetivo:
 
