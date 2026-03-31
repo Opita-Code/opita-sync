@@ -87,6 +87,7 @@ Ya definidos en este repo:
 - runbook ejecutable del piloto versionado en `docs/PILOT_RUNBOOK.md`
 - primer resultado parcial del piloto versionado en `docs/PILOT_RUN_RESULTS_2026-03-31.md`
 - plan post-piloto versionado en `docs/POST_PILOT_PLAN.md`
+- segunda vuelta del piloto definida en `docs/PILOT_SECOND_ROUND_PLAN.md`
 
 ## Estado de implementación relevante
 
@@ -105,7 +106,7 @@ El código del framework en el repo hermano ya implementa:
 
 ## Próximo trabajo recomendado en producto
 
-1. ejecutar la fase post-piloto definida en `docs/POST_PILOT_PLAN.md`
+1. ejecutar `P0.1` según `docs/PILOT_SECOND_ROUND_PLAN.md`
 2. usar el pilot pack + checklist + scorecard para la segunda vuelta del piloto
 3. usar `docs/PILOT_RUNBOOK.md` como guía paso a paso
 4. mantener source of truth y roadmap sincronizados con el repo framework
