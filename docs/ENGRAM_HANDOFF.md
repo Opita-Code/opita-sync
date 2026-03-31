@@ -129,6 +129,10 @@ El código del framework en el repo hermano ya implementa:
 - `P2.2` implementado mínimamente en el framework mediante `requested_capability_id`
 - `P2.3` implementado como baseline enterprise-like con `connector.execution.enterprise`
 
+## Evaluación global
+
+- evaluación ejecutiva consolidada en `docs/GLOBAL_PROJECT_EVALUATION_2026-03-31.md`
+
 ## Observabilidad del segundo dominio
 
 - la scorecard del framework ya incorpora métricas access-aware para grants y delegaciones
