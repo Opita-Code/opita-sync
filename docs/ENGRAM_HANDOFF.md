@@ -116,6 +116,10 @@ El código del framework en el repo hermano ya implementa:
 3. ejecutar el backlog `P1` definido en `docs/P1_HARDENING_BACKLOG.md`
 4. mantener source of truth y roadmap sincronizados con el repo framework
 
+## Estado P1 actual
+
+- `P1.1` ya quedó implementado en el repo framework mediante scorecard por escenario derivada de `trace_id`
+
 ## AWS / plataforma
 
 - owner GitHub correcto: `Opita-Code`

@@ -18,6 +18,8 @@ Se trata de fortalecer lo ya validado para:
 
 ## P1.1 — Scorecard por escenario
 
+**Status:** implemented in framework
+
 ### Problema
 
 La scorecard actual está bien por tenant, pero todavía mezcla múltiples ejecuciones y hace más difícil leer el resultado por escenario.
