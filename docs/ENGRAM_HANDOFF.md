@@ -86,6 +86,7 @@ Ya definidos en este repo:
 - assets operativos del piloto versionados en `docs/PILOT_*`
 - runbook ejecutable del piloto versionado en `docs/PILOT_RUNBOOK.md`
 - primer resultado parcial del piloto versionado en `docs/PILOT_RUN_RESULTS_2026-03-31.md`
+- plan post-piloto versionado en `docs/POST_PILOT_PLAN.md`
 
 ## Estado de implementación relevante
 
@@ -104,8 +105,8 @@ El código del framework en el repo hermano ya implementa:
 
 ## Próximo trabajo recomendado en producto
 
-1. commitear y empujar los cambios locales de `M5.1` y `M5.3` si todavía no están publicados
-2. usar el pilot pack + checklist + scorecard para coordinar ejecución real del piloto
+1. ejecutar la fase post-piloto definida en `docs/POST_PILOT_PLAN.md`
+2. usar el pilot pack + checklist + scorecard para la segunda vuelta del piloto
 3. usar `docs/PILOT_RUNBOOK.md` como guía paso a paso
 4. mantener source of truth y roadmap sincronizados con el repo framework
 
