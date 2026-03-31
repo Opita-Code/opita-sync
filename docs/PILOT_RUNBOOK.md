@@ -4,6 +4,20 @@
 
 Ejecutar el piloto de Opita Sync sobre el dominio `tenant configuration governance` usando el framework publicado y los assets operativos del repo producto.
 
+## Estructura recomendada por escenario
+
+Antes de correr cada escenario, revisar:
+
+- `docs/PILOT_SCENARIO_CHECKPOINTS.md`
+- `docs/PILOT_HUMAN_TIMING_TEMPLATE.md`
+
+Cada escenario debe dejar:
+
+- expected outcome explícito
+- checkpoints marcados
+- evidence mínima obligatoria
+- actual outcome documentado
+
 ## Requisitos previos
 
 - repo producto: `https://github.com/Opita-Code/opita-sync`
@@ -95,6 +109,15 @@ curl "$BASE_URL/v1/tenants-connectors/tenant-beta-governance"
 ## Paso 2 — Escenario base del corredor
 
 Usá este patrón para cada escenario.
+
+### Checklist mínimo por escenario
+
+- [ ] expected outcome registrado
+- [ ] trace_id definido
+- [ ] operator subject definido
+- [ ] approver subject definido si aplica
+- [ ] artifacts mínimos guardados
+- [ ] actual outcome registrado al cierre
 
 ### 2.1 Intake
 
@@ -374,6 +397,15 @@ Campos mínimos:
 - evidence refs
 - outcome
 
+## Paso 7.1 — Expected vs actual
+
+Completar al final del escenario:
+
+- expected outcome
+- actual outcome
+- passed = yes/no
+- notes
+
 ## Paso 8 — Gate final
 
 Tomar los resultados y compararlos contra:
@@ -392,4 +424,5 @@ Decisión final permitida:
 - `PILOT_EXECUTION_CHECKLIST.md`
 - `PILOT_SCORECARD_TEMPLATE.md`
 - `PILOT_INCIDENT_LOG_TEMPLATE.md`
+- `PILOT_SCENARIO_CHECKPOINTS.md`
 - resultados/export del endpoint `/v1/pilot/scorecard`

@@ -81,6 +81,8 @@ Derivar candidatos automáticos de incidentes/gaps desde:
 
 ## P1.3 — Runbook más estructurado
 
+**Status:** implemented in product docs
+
 ### Problema
 
 El runbook ya sirve, pero todavía puede mejorar en precisión operacional.
