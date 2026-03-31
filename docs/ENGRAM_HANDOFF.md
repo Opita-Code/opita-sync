@@ -113,7 +113,7 @@ El código del framework en el repo hermano ya implementa:
 
 1. tomar `pilot_passed_with_gaps` como estado consolidado actual del piloto
 2. usar `docs/PILOT_FINAL_REVALIDATION_2026-03-31.md` como decisión ejecutiva vigente
-3. pasar a backlog de endurecimiento `P1` o a una validación humana más fuerte
+3. ejecutar el backlog `P1` definido en `docs/P1_HARDENING_BACKLOG.md`
 4. mantener source of truth y roadmap sincronizados con el repo framework
 
 ## AWS / plataforma
