@@ -13,6 +13,8 @@
 
 - bootstrap: **operable**
 - scenario executed: habilitar execution path gobernado
+- scenario executed: habilitar capability visible
+- scenario executed: activar conector del tenant
 - corridor reached:
   - intake
   - proposal
@@ -45,12 +47,12 @@
 
 ### Alpha scorecard snapshot
 
-- approvals required: `1`
-- successful releases: `1`
-- governance blocks: `1`
+- approvals required: `2`
+- successful releases: `2`
+- governance blocks: `2`
 - fingerprint mismatches: `0`
-- cases with full evidence trail: `1`
-- end-to-end reconstructable: `1`
+- cases with full evidence trail: `3`
+- end-to-end reconstructable: `3`
 - recovery executed: `0`
 
 ### Beta scorecard snapshot
@@ -62,6 +64,25 @@
 - cases with full evidence trail: `3`
 - end-to-end reconstructable: `3`
 - recovery executed: `1`
+
+## Evaluación contra criterios publicados
+
+### Success criteria
+
+1. ambos tenants `operable` → **cumplido**
+2. al menos 4 de 5 escenarios completan el corredor entero → **cumplido**
+3. los casos bloqueados muestran approvals explícitas y reason codes claros → **cumplido**
+4. los casos de recovery dejan audit trail y outcome explícito → **cumplido**
+5. al menos 80% de los casos del piloto son reconstruibles end-to-end → **cumplido**
+6. no aparece bypass directo desde chat a provider → **cumplido**
+
+### Failure criteria
+
+1. tenant `operable` sin mínimo duro real → **no observado**
+2. cambios aplicados sin evidencia o correlación suficiente → **no observado**
+3. approval/release bypasseable → **no observado**
+4. preview contradice ejecución sin señal clara del gap → **no observado materialmente**
+5. recovery muta estado canónico fuera del corredor → **no observado**
 
 ## Hallazgos
 
@@ -75,18 +96,21 @@
 
 Estado actual:
 
-- `pilot_in_progress`
+- `pilot_passed_with_gaps`
 
-No corresponde marcar aún:
+## Por qué no `pilot_passed` a secas
 
-- `pilot_passed`
-- `pilot_failed`
+Aunque los criterios funcionales definidos para este piloto se cumplieron, todavía quedan gaps razonables antes de tratarlo como validación fuerte de campo:
 
-porque todavía faltan escenarios del pilot pack y una scorecard completa consolidada.
+1. el piloto corrió localmente y con tenants simulados, no en un entorno operativo real;
+2. varias métricas de tiempo dan `0` porque el flujo se ejecutó sin pausas humanas reales;
+3. no hubo conectores enterprise externos ni condiciones de infraestructura más adversas.
+
+O sea: el dominio y el corredor **pasaron**, pero todavía falta una vuelta más realista para cantar victoria completa.
 
 ## Siguientes pasos sugeridos
 
-1. ejecutar los escenarios faltantes del pilot pack;
-2. completar `PILOT_SCORECARD_TEMPLATE.md` con los resultados finales;
-3. registrar incidentes concretos en `PILOT_INCIDENT_LOG_TEMPLATE.md` si aparecen gaps;
-4. decidir `pilot_passed`, `pilot_passed_with_gaps` o `pilot_failed` con evidencia completa.
+1. ejecutar una segunda vuelta del piloto en entorno más realista o con usuarios reales internos;
+2. completar `PILOT_SCORECARD_TEMPLATE.md` con estos resultados consolidados;
+3. registrar incidentes/gaps reales en `PILOT_INCIDENT_LOG_TEMPLATE.md` si aparecen en la siguiente vuelta;
+4. decidir si ya se puede promover a `pilot_passed` o si conviene abrir una nueva iteración controlada.
