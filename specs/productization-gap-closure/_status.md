@@ -22,6 +22,8 @@ Traducir el plan de desarrollo de Opita Sync sobre OSF a una línea nueva de spe
 8. `S4` — evidence trail hardening
 9. `S5` — recovery and compensation minimum
 10. `S6` — tenant bootstrap operable
+11. `S7` — first domain: tenant configuration governance
+12. `S8` — pilot plan for tenant configuration governance
 
 ## Regla de lectura obligatoria
 

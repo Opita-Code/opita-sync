@@ -110,7 +110,7 @@ La monetización acompaña el modelo operativo del producto; no define su esenci
 
 La primera vertical de Opita Sync es:
 
-**gobernanza de cambios operativos del tenant**
+**gobernanza de cambios de configuración operativa del tenant**
 
 El corredor inicial obligatorio es:
 

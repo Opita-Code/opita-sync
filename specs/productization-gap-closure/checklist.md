@@ -60,6 +60,20 @@
 - [x] fijar artifacts de salida
 - [x] fijar success y failure paths
 
+## S7 — First domain: tenant configuration governance
+- [x] elegir el primer dominio real de producto
+- [x] fijar casos de uso iniciales
+- [x] fijar conectores y capabilities iniciales del dominio
+- [x] fijar approvals y outcomes del dominio
+- [x] fijar suite mínima de escenarios
+
+## S8 — Pilot plan for tenant configuration governance
+- [x] definir 1–2 tenants piloto
+- [x] definir escenarios mínimos del piloto
+- [x] definir métricas del piloto
+- [x] definir criterio explícito de éxito
+- [x] definir criterio explícito de fracaso
+
 ## Estado operativo actual
 
 - [x] los bloques S0-S6 ya tienen spec escrita

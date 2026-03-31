@@ -72,6 +72,18 @@ Ya definidos en specs:
 - `S5` recovery and compensation minimum
 - `S6` tenant bootstrap operable
 
+## Modelado de dominio y piloto
+
+Ya definidos en este repo:
+
+- `S7` first domain: tenant configuration governance
+- `S8` pilot plan for tenant configuration governance
+
+## Estado de modelado del producto
+
+- `M5.1` definido: primer dominio real = `tenant configuration governance`
+- `M5.3` definido: piloto con `tenant-alpha-ops` y `tenant-beta-governance`, escenarios, métricas y success/failure criteria
+
 ## Estado de implementación relevante
 
 El código del framework en el repo hermano ya implementa:
@@ -85,13 +97,13 @@ El código del framework en el repo hermano ya implementa:
 - `M3.3` catálogo visible y conectores habilitados por tenant
 - `M4.1` workspace usable de intake/proposal
 - `M4.2` readable preview
+- `M4.3` operator inspection workspace
 
-## Próximo trabajo recomendado
+## Próximo trabajo recomendado en producto
 
-1. `M4.3` inspection/recovery usable para operator
-2. primera vertical real (`M5.1`)
-3. conectores del dominio (`M5.2`)
-4. piloto (`M5.3`)
+1. commitear y empujar los cambios locales de `M5.1` y `M5.3` si todavía no están publicados
+2. usar el pilot pack para coordinar ejecución real del piloto
+3. mantener source of truth y roadmap sincronizados con el repo framework
 
 ## AWS / plataforma
 

@@ -183,11 +183,11 @@ Lograr que un tenant pueda operar una vertical real con este corredor:
 - [ ] no existe mutación directa del estado canónico fuera del corredor
 
 ### M5.1 — Elegir y modelar primer dominio
-- [ ] el dominio tiene caso de uso claro y repetible
-- [ ] el dominio cabe dentro de capabilities y governance existentes
-- [ ] el dominio define conectores, approvals y outcomes requeridos
-- [ ] existe suite mínima de escenarios del dominio
-- [ ] el dominio puede pilotearse sin inventar producto paralelo
+- [x] el dominio tiene caso de uso claro y repetible
+- [x] el dominio cabe dentro de capabilities y governance existentes
+- [x] el dominio define conectores, approvals y outcomes requeridos
+- [x] existe suite mínima de escenarios del dominio
+- [x] el dominio puede pilotearse sin inventar producto paralelo
 
 ### M5.2 — Implementar connectors del dominio
 - [ ] connectors respetan manifest/binding/provider
@@ -197,11 +197,11 @@ Lograr que un tenant pueda operar una vertical real con este corredor:
 - [ ] hay tests de integración con casos exitosos y fallidos
 
 ### M5.3 — Pilotear con 1–2 tenants
-- [ ] existen tenants piloto configurados
-- [ ] el flujo completo corre con artifacts reales
-- [ ] se miden tiempos, bloqueos, approvals y outcomes
-- [ ] se registran incidentes o gaps del piloto
-- [ ] existe criterio explícito de éxito o fracaso del piloto
+- [x] existen tenants piloto definidos
+- [x] el flujo completo está especificado para correr con artifacts reales
+- [x] se definieron métricas de tiempos, bloqueos, approvals y outcomes
+- [x] se definió registro de incidentes o gaps del piloto
+- [x] existe criterio explícito de éxito o fracaso del piloto
 
 ---
 
