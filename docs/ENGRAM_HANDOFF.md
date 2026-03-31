@@ -83,6 +83,7 @@ Ya definidos en este repo:
 
 - `M5.1` definido: primer dominio real = `tenant configuration governance`
 - `M5.3` definido: piloto con `tenant-alpha-ops` y `tenant-beta-governance`, escenarios, métricas y success/failure criteria
+- assets operativos del piloto versionados en `docs/PILOT_*`
 
 ## Estado de implementación relevante
 
@@ -102,7 +103,7 @@ El código del framework en el repo hermano ya implementa:
 ## Próximo trabajo recomendado en producto
 
 1. commitear y empujar los cambios locales de `M5.1` y `M5.3` si todavía no están publicados
-2. usar el pilot pack para coordinar ejecución real del piloto
+2. usar el pilot pack + checklist + scorecard para coordinar ejecución real del piloto
 3. mantener source of truth y roadmap sincronizados con el repo framework
 
 ## AWS / plataforma
