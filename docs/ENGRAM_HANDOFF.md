@@ -125,7 +125,7 @@ El código del framework en el repo hermano ya implementa:
 
 ## Estado P2 actual
 
-- `P2.1` iniciado en framework con grants y delegaciones base
+- `P2.1` baseline implementado en framework con grants, delegaciones, approval y revoke
 - `P2.2` implementado mínimamente en el framework mediante `requested_capability_id`
 - `P2.3` implementado como baseline enterprise-like con `connector.execution.enterprise`
 

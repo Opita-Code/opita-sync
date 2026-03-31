@@ -6,7 +6,7 @@ Abrir la fase de expansión controlada después del cierre de `P1`.
 
 ## P2.1 — Second domain
 
-**Status:** implementation started in framework
+**Status:** baseline implemented in framework
 
 Dominio recomendado:
 
