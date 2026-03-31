@@ -92,6 +92,7 @@ Ya definidos en este repo:
 - captura humana de tiempos para `P0.2` en `docs/PILOT_HUMAN_TIMING_*`
 - cierre de `P0.3` en `docs/PILOT_SCORECARD_FINAL_2026-03-31.md` y `docs/PILOT_INCIDENT_LOG_FINAL_2026-03-31.md`
 - validación de `P0.4` en `docs/PILOT_P0_4_RESULTS_2026-03-31.md`
+- revalidación final de `P0.5` en `docs/PILOT_FINAL_REVALIDATION_2026-03-31.md`
 
 ## Estado de implementación relevante
 
@@ -110,9 +111,9 @@ El código del framework en el repo hermano ya implementa:
 
 ## Próximo trabajo recomendado en producto
 
-1. ejecutar `P0.5` y revalidar formalmente el estado global del piloto
-2. usar `docs/PILOT_SCORECARD_FINAL_2026-03-31.md` y `docs/PILOT_INCIDENT_LOG_FINAL_2026-03-31.md` como baseline consolidada
-3. usar `docs/PILOT_P0_4_RESULTS_2026-03-31.md` como evidencia del conector más exigente
+1. tomar `pilot_passed_with_gaps` como estado consolidado actual del piloto
+2. usar `docs/PILOT_FINAL_REVALIDATION_2026-03-31.md` como decisión ejecutiva vigente
+3. pasar a backlog de endurecimiento `P1` o a una validación humana más fuerte
 4. mantener source of truth y roadmap sincronizados con el repo framework
 
 ## AWS / plataforma
