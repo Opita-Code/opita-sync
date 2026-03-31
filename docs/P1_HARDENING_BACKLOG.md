@@ -112,6 +112,8 @@ Agregar:
 
 ## P1.4 — Tenant admin UX más concreta
 
+**Status:** implemented in framework
+
 ### Problema
 
 El dominio ya corre, pero sigue siendo bastante técnico desde la experiencia de tenant admin.

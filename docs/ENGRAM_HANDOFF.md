@@ -121,6 +121,7 @@ El código del framework en el repo hermano ya implementa:
 - `P1.1` ya quedó implementado en el repo framework mediante scorecard por escenario derivada de `trace_id`
 - `P1.2` ya quedó implementado en el repo framework mediante incident candidates derivados del event log canónico
 - `P1.3` ya quedó implementado en el repo producto mediante runbook estructurado y checkpoints por escenario
+- `P1.4` ya quedó implementado en el repo framework mediante tenant admin workspace concreta
 
 ## AWS / plataforma
 
