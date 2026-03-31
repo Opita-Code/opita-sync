@@ -113,7 +113,7 @@ El código del framework en el repo hermano ya implementa:
 
 1. tomar `pilot_passed_with_gaps` como estado consolidado actual del piloto
 2. usar `docs/PILOT_FINAL_REVALIDATION_2026-03-31.md` como decisión ejecutiva vigente
-3. ejecutar el backlog `P1` definido en `docs/P1_HARDENING_BACKLOG.md`
+3. abrir la fase `P2` mediante `docs/P2_EXPANSION_BACKLOG.md`
 4. mantener source of truth y roadmap sincronizados con el repo framework
 
 ## Estado P1 actual
@@ -122,6 +122,12 @@ El código del framework en el repo hermano ya implementa:
 - `P1.2` ya quedó implementado en el repo framework mediante incident candidates derivados del event log canónico
 - `P1.3` ya quedó implementado en el repo producto mediante runbook estructurado y checkpoints por escenario
 - `P1.4` ya quedó implementado en el repo framework mediante tenant admin workspace concreta
+
+## Estado P2 actual
+
+- `P2.1` definido: `tenant access and delegation governance`
+- `P2.2` abierto
+- `P2.3` abierto
 
 ## AWS / plataforma
 
