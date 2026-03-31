@@ -133,6 +133,7 @@ El código del framework en el repo hermano ya implementa:
 
 - pilot plan definido en `source-of-truth/pilot-plan-tenant-access-and-delegation-governance.md`
 - spec de piloto en `specs/productization-gap-closure/s10-pilot-plan-tenant-access-and-delegation-v1.md`
+- runbook ejecutable en `docs/PILOT_ACCESS_RUNBOOK.md`
 
 ## AWS / plataforma
 
