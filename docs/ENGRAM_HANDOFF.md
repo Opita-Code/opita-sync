@@ -129,6 +129,11 @@ El código del framework en el repo hermano ya implementa:
 - `P2.2` implementado mínimamente en el framework mediante `requested_capability_id`
 - `P2.3` implementado como baseline enterprise-like con `connector.execution.enterprise`
 
+## Segundo dominio — piloto
+
+- pilot plan definido en `source-of-truth/pilot-plan-tenant-access-and-delegation-governance.md`
+- spec de piloto en `specs/productization-gap-closure/s10-pilot-plan-tenant-access-and-delegation-v1.md`
+
 ## AWS / plataforma
 
 - owner GitHub correcto: `Opita-Code`

@@ -12,6 +12,11 @@ Dominio recomendado:
 
 - `tenant access and delegation governance`
 
+Pilot pack:
+
+- `source-of-truth/pilot-plan-tenant-access-and-delegation-governance.md`
+- `specs/productization-gap-closure/s10-pilot-plan-tenant-access-and-delegation-v1.md`
+
 ## P2.2 — Resolver selección dinámica de capabilities por dominio
 
 **Status:** implemented in framework (minimum dynamic override)
