@@ -50,6 +50,8 @@ Agregar una vista por escenario que conecte mejor:
 
 ## P1.2 — Incident candidates derivados del evidence trail
 
+**Status:** implemented in framework
+
 ### Problema
 
 El incident log final fue útil, pero sigue dependiendo de redacción manual.
