@@ -27,6 +27,12 @@ Validación de observabilidad del segundo dominio con foco en:
   - `tenant_access.grant_awaiting_approval`
   - `tenant_access.delegation_awaiting_approval`
 
+### 4. Evidencia real del rerun
+
+- el rerun del segundo dominio mostró scorecards por tenant y por escenario con métricas access-aware útiles;
+- los incident candidates del rerun ya incluyeron grants/delegaciones esperando approval;
+- la observabilidad del segundo dominio dejó de depender casi por completo del corredor clásico con `execution_id`.
+
 ## Conclusión de Tarea 4
 
 - **Tarea 4 = complete**
@@ -40,3 +46,5 @@ Con Tarea 1, Tarea 2, Tarea 3 y Tarea 4 completas, el estado recomendado para Se
 ## Observación
 
 La observabilidad del segundo dominio todavía puede mejorar en elegancia, pero ya no omite sus casos obvios ni depende tanto del corredor clásico con `execution_id`.
+
+Con el rerun del piloto, esta observación ya no es teórica: quedó validada con evidencia real.

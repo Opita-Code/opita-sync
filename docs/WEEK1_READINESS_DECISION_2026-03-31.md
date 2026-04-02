@@ -41,6 +41,10 @@ o
 
 - **`ready_for_week_2`**
 
+### Nivel de confianza
+
+- **alto**
+
 ## Por qué
 
 Porque:
@@ -49,6 +53,7 @@ Porque:
 2. la consistencia de estados ya es razonable;
 3. la visibilidad de items sensibles ya supera el umbral mínimo de claridad;
 4. la observabilidad del segundo dominio ya dejó de estar claramente por detrás.
+5. el rerun del piloto del segundo dominio confirmó que la señal de scorecards e incident candidates ya es útil de verdad.
 
 ## Qué NO significa esta decisión
 
