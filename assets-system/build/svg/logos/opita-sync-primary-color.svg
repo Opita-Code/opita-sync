@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" viewBox="0 0 1400 320">
+  <path stroke="#0B1530" stroke-linecap="round" stroke-width="10.56" d="M123.15 101.15h117.7m0 0v117.7"/>
+  <path stroke="#7C8AA3" stroke-linecap="round" stroke-width="10.56" d="M123.15 101.15v117.7m0 0h117.7"/>
+  <rect width="47.3" height="47.3" x="99.5" y="77.5" fill="#0B1530" rx="14.19" ry="14.19"/>
+  <rect width="47.3" height="47.3" x="217.2" y="77.5" fill="#1B9A92" rx="14.19" ry="14.19"/>
+  <rect width="47.3" height="47.3" x="217.2" y="195.2" fill="#0B1530" rx="14.19" ry="14.19"/>
+  <rect width="47.3" height="47.3" x="99.5" y="195.2" fill="none" stroke="#7C8AA3" stroke-width="10.032" rx="14.19" ry="14.19"/>
+  <text x="378" y="207" fill="#0B1530" font-size="138" style="font-family:&quot;Inter&quot;,&quot;Arial&quot;,sans-serif;font-weight:700;letter-spacing:-.035em">Opita Sync</text>
+</svg>

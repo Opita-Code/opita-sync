@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" viewBox="0 0 1200 700">
+  <path stroke="#0B1530" stroke-linecap="round" stroke-width="13.44" d="M525.1 161.1h149.8m0 0v149.8"/>
+  <path stroke="#7C8AA3" stroke-linecap="round" stroke-width="13.44" d="M525.1 161.1v149.8m0 0h149.8"/>
+  <rect width="60.2" height="60.2" x="495" y="131" fill="#0B1530" rx="18.06" ry="18.06"/>
+  <rect width="60.2" height="60.2" x="644.8" y="131" fill="#1B9A92" rx="18.06" ry="18.06"/>
+  <rect width="60.2" height="60.2" x="644.8" y="280.8" fill="#0B1530" rx="18.06" ry="18.06"/>
+  <rect width="60.2" height="60.2" x="495" y="280.8" fill="none" stroke="#7C8AA3" stroke-width="12.768" rx="18.06" ry="18.06"/>
+  <text x="600" y="492" fill="#0B1530" font-size="110" style="font-family:&quot;Inter&quot;,&quot;Arial&quot;,sans-serif;font-weight:700;letter-spacing:-.035em" text-anchor="middle">Opita Sync</text>
+  <text x="600" y="560" fill="#1B9A92" font-size="28" style="font-family:&quot;Inter&quot;,&quot;Arial&quot;,sans-serif;font-weight:500" text-anchor="middle"><tspan x="600" dy="0">Interoperabilidad empresarial operada por intención</tspan></text>
+</svg>

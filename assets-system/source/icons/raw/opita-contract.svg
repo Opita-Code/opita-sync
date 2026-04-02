@@ -1,0 +1,9 @@
+<svg baseProfile="full" height="128" version="1.1" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+    .display { font-family: 'Inter', 'Arial', sans-serif; font-weight: 600; letter-spacing: -0.03em; }
+    .display-bold { font-family: 'Inter', 'Arial', sans-serif; font-weight: 700; letter-spacing: -0.035em; }
+    .body { font-family: 'Inter', 'Arial', sans-serif; font-weight: 400; }
+    .body-medium { font-family: 'Inter', 'Arial', sans-serif; font-weight: 500; }
+    .label { font-family: 'Inter', 'Arial', sans-serif; font-weight: 600; letter-spacing: 0.08em; }
+    .mono { font-family: 'DejaVu Sans Mono', monospace; font-weight: 400; }
+    .smallcaps { font-family: 'Inter', 'Arial', sans-serif; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+    ]]></style></defs><rect fill="none" height="64" rx="12" ry="12" stroke="#0B1530" stroke-width="6" width="48" x="34" y="20" /><line stroke="#7C8AA3" stroke-linecap="round" stroke-width="6" x1="46" x2="70" y1="40" y2="40" /><line stroke="#7C8AA3" stroke-linecap="round" stroke-width="6" x1="46" x2="70" y1="56" y2="56" /><line stroke="#1B9A92" stroke-linecap="round" stroke-width="6" x1="46" x2="62" y1="72" y2="72" /><rect fill="#1B9A92" height="14" rx="4" ry="4" width="14" x="62" y="51" /></svg>

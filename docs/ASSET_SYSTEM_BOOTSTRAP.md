@@ -40,7 +40,7 @@ Eso permite revisar y ajustar la estructura antes de instalar dependencias o cor
 - `Storybook` disponible
 - build mínimo de tokens ejecutado con éxito
 - outputs generados en `assets-system/build/css`, `assets-system/build/scss` y `assets-system/build/ts`
-- bootstrap de `SVGO` preparado, pero todavía no ejecutado
+- bootstrap de `SVGO` preparado y primera corrida ejecutada sobre una tanda controlada de logos e íconos
 
 ## Nota
 

@@ -1,0 +1,9 @@
+<svg baseProfile="full" height="128" version="1.1" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+    .display { font-family: 'Inter', 'Arial', sans-serif; font-weight: 600; letter-spacing: -0.03em; }
+    .display-bold { font-family: 'Inter', 'Arial', sans-serif; font-weight: 700; letter-spacing: -0.035em; }
+    .body { font-family: 'Inter', 'Arial', sans-serif; font-weight: 400; }
+    .body-medium { font-family: 'Inter', 'Arial', sans-serif; font-weight: 500; }
+    .label { font-family: 'Inter', 'Arial', sans-serif; font-weight: 600; letter-spacing: 0.08em; }
+    .mono { font-family: 'DejaVu Sans Mono', monospace; font-weight: 400; }
+    .smallcaps { font-family: 'Inter', 'Arial', sans-serif; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+    ]]></style></defs><circle cx="54" cy="48" fill="none" r="22" stroke="#0B1530" stroke-width="6" /><line stroke="#0B1530" stroke-linecap="round" stroke-width="6" x1="68" x2="92" y1="64" y2="88" /><line stroke="#7C8AA3" stroke-linecap="round" stroke-width="4" x1="28" x2="94" y1="90" y2="90" /><rect fill="none" height="16" rx="4" ry="4" stroke="#1B9A92" stroke-width="4" width="16" x="46" y="40" /></svg>
