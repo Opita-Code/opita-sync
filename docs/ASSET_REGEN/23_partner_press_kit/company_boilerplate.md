@@ -1,0 +1,1 @@
+Opita Sync is an AI-first governed control plane built on top of Opita Sync Framework (OSF). It helps organizations activate tenants, govern operational changes and workflows, and preserve approvals, evidence, inspection and recovery over real systems without losing control.
