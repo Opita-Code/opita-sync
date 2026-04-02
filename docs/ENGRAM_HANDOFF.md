@@ -168,6 +168,7 @@ El código del framework en el repo hermano ya implementa:
 - congelación operativa del kit en `docs/ASSET_FREEZE_NOTICE.md`
 - brief de reescritura del núcleo estratégico del kit en `docs/ASSET_P0_STRATEGY_REWRITE_BRIEF.md`
 - brief de reescritura del messaging system del kit en `docs/ASSET_P0_MESSAGING_REWRITE_BRIEF.md`
+- brief de saneamiento de starters del kit en `docs/ASSET_P0_STARTER_SANITIZATION_BRIEF.md`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
