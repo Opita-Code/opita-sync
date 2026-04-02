@@ -165,6 +165,7 @@ El código del framework en el repo hermano ya implementa:
 - plan de adopción controlada en `docs/CONTROLLED_ADOPTION_PLAN.md`
 - backlog accionable de remediación de assets en `docs/ASSET_REMEDIATION_BACKLOG.md`
 - plan ejecutable de P0 de assets en `docs/ASSET_P0_EXECUTION_PLAN.md`
+- congelación operativa del kit en `docs/ASSET_FREEZE_NOTICE.md`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
