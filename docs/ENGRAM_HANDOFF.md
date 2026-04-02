@@ -143,6 +143,7 @@ El código del framework en el repo hermano ya implementa:
 - comparación de dominios en `docs/DOMAIN_COMPARISON_2026-04-02.md`
 - revisión UX del segundo dominio en `docs/ACCESS_UX_REVIEW_2026-04-02.md`
 - mejora de señal temporal del segundo dominio en `docs/ACCESS_TEMPORAL_SIGNAL_UPDATE_2026-04-02.md`
+- mejora de vigencia temporal del access plane en `docs/ACCESS_TEMPORAL_VALIDITY_UPDATE_2026-04-02.md`
 
 ## Observabilidad del segundo dominio
 
