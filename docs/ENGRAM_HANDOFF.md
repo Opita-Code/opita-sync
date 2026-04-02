@@ -161,6 +161,7 @@ El código del framework en el repo hermano ya implementa:
 - brief ejecutivo del segundo dominio en `docs/SECOND_DOMAIN_EXECUTIVE_BRIEF.md`
 - checkpoint del polish del segundo dominio en `docs/SECOND_DOMAIN_POLISH_CHECKPOINT_2026-04-02.md`
 - consolidación final del segundo dominio en `docs/SECOND_DOMAIN_CONSOLIDATION_2026-04-02.md`
+- decisión estratégica siguiente en `docs/NEXT_STRATEGIC_MOVE_2026-04-02.md`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
