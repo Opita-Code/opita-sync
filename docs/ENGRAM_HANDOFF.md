@@ -171,6 +171,7 @@ El código del framework en el repo hermano ya implementa:
 - brief de saneamiento de starters del kit en `docs/ASSET_P0_STARTER_SANITIZATION_BRIEF.md`
 - resolución canónica QA del kit en `docs/ASSET_QA_RESOLUTION_2026-04-02.md`
 - versión regenerada del strategy reference en `docs/ASSET_REGEN/08_strategy_reference/*`
+- versión regenerada del messaging system en `docs/ASSET_REGEN/16_messaging_system/*`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
