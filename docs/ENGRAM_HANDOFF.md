@@ -158,6 +158,7 @@ El código del framework en el repo hermano ya implementa:
 - validación formal del segundo dominio en `docs/SECOND_DOMAIN_VALIDATION_2026-04-02.md`
 - plan corto de polish del segundo dominio en `docs/SECOND_DOMAIN_POLISH_PLAN.md`
 - brief ejecutivo del segundo dominio en `docs/SECOND_DOMAIN_EXECUTIVE_BRIEF.md`
+- checkpoint del polish del segundo dominio en `docs/SECOND_DOMAIN_POLISH_CHECKPOINT_2026-04-02.md`
 
 ## AWS / plataforma
 
