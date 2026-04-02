@@ -31,6 +31,13 @@ En esta fase quedó preparado el bootstrap del workspace, pero no se ejecutaron 
 
 Eso permite revisar y ajustar la estructura antes de instalar dependencias o correr Storybook/Style Dictionary.
 
+## Estado actual del bootstrap
+
+- dependencias del workspace instaladas
+- `Style Dictionary` disponible
+- `Storybook` disponible
+- builds del pipeline todavía no ejecutadas
+
 ## Nota
 
 Esto es bootstrap, no sistema terminado.
