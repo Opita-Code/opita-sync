@@ -173,6 +173,7 @@ El código del framework en el repo hermano ya implementa:
 - versión regenerada del strategy reference en `docs/ASSET_REGEN/08_strategy_reference/*`
 - versión regenerada del messaging system en `docs/ASSET_REGEN/16_messaging_system/*`
 - versión regenerada de starters en `docs/ASSET_REGEN/14_design_system/*` y `docs/ASSET_REGEN/20_docs_developer_kit/*`
+- versión regenerada del storytelling visual en `docs/ASSET_REGEN/19_product_storytelling/*`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
