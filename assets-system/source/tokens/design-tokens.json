@@ -1,0 +1,55 @@
+{
+  "color": {
+    "navy": { "value": "#0B1530" },
+    "surface": { "value": "#0A2B40" },
+    "slate": { "value": "#7C8AA3" },
+    "slateLight": { "value": "#C9D2DC" },
+    "teal": { "value": "#1B9A92" },
+    "tealBright": { "value": "#2DC2B5" },
+    "cloud": { "value": "#F5F7FA" },
+    "mist": { "value": "#D8E0EA" },
+    "white": { "value": "#FFFFFF" },
+    "textMid": { "value": "#61738C" },
+    "textSoft": { "value": "#7B8CA2" },
+    "success": { "value": "#13795B" },
+    "warning": { "value": "#9A6700" },
+    "error": { "value": "#C0362C" },
+    "focus": { "value": "#2DC2B5" }
+  },
+  "radius": {
+    "sm": { "value": "10px" },
+    "md": { "value": "16px" },
+    "lg": { "value": "24px" },
+    "xl": { "value": "32px" },
+    "pill": { "value": "999px" }
+  },
+  "spacing": {
+    "1": { "value": "4px" },
+    "2": { "value": "8px" },
+    "3": { "value": "12px" },
+    "4": { "value": "16px" },
+    "5": { "value": "20px" },
+    "6": { "value": "24px" },
+    "8": { "value": "32px" },
+    "10": { "value": "40px" },
+    "12": { "value": "48px" },
+    "16": { "value": "64px" },
+    "20": { "value": "80px" },
+    "24": { "value": "96px" }
+  },
+  "motion": {
+    "durationFast": { "value": "120ms" },
+    "durationBase": { "value": "220ms" },
+    "durationSlow": { "value": "360ms" },
+    "easeStandard": { "value": "cubic-bezier(0.2, 0.8, 0.2, 1)" },
+    "easeEntrance": { "value": "cubic-bezier(0.16, 1, 0.3, 1)" }
+  },
+  "typography": {
+    "fontFamilyDisplay": { "value": "Inter, Arial, sans-serif" },
+    "fontFamilyBody": { "value": "Inter, Arial, sans-serif" },
+    "fontWeightRegular": { "value": 400 },
+    "fontWeightMedium": { "value": 500 },
+    "fontWeightSemiBold": { "value": 600 },
+    "fontWeightBold": { "value": 700 }
+  }
+}
