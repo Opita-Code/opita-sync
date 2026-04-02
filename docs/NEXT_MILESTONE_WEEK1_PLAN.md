@@ -109,9 +109,9 @@ Dejar al segundo dominio listo para la Semana 2 del roadmap.
 
 ### Done
 
-- [ ] existe decisión de readiness
-- [ ] si hay gaps bloqueantes, quedan documentados
-- [ ] si no hay gaps bloqueantes, se habilita rerun del piloto del segundo dominio
+- [x] existe decisión de readiness
+- [x] si hay gaps bloqueantes, quedan documentados
+- [x] si no hay gaps bloqueantes, se habilita rerun del piloto del segundo dominio
 
 ---
 

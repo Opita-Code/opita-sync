@@ -138,6 +138,7 @@ El código del framework en el repo hermano ya implementa:
 - chequeo de consistencia de estados (Tarea 2) en `docs/ACCESS_STATE_CONSISTENCY_CHECK_2026-03-31.md`
 - chequeo de visibilidad sensible (Tarea 3) en `docs/ACCESS_SENSITIVE_VISIBILITY_CHECK_2026-03-31.md`
 - chequeo de observabilidad (Tarea 4) en `docs/ACCESS_OBSERVABILITY_CHECK_2026-03-31.md`
+- decisión final de Semana 1 en `docs/WEEK1_READINESS_DECISION_2026-03-31.md`
 
 ## Observabilidad del segundo dominio
 
