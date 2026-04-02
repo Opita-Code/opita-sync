@@ -163,6 +163,7 @@ El código del framework en el repo hermano ya implementa:
 - consolidación final del segundo dominio en `docs/SECOND_DOMAIN_CONSOLIDATION_2026-04-02.md`
 - decisión estratégica siguiente en `docs/NEXT_STRATEGIC_MOVE_2026-04-02.md`
 - plan de adopción controlada en `docs/CONTROLLED_ADOPTION_PLAN.md`
+- backlog accionable de remediación de assets en `docs/ASSET_REMEDIATION_BACKLOG.md`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
