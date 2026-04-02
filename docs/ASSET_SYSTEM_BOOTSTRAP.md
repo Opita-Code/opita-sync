@@ -36,7 +36,8 @@ Eso permite revisar y ajustar la estructura antes de instalar dependencias o cor
 - dependencias del workspace instaladas
 - `Style Dictionary` disponible
 - `Storybook` disponible
-- builds del pipeline todavía no ejecutadas
+- build mínimo de tokens ejecutado con éxito
+- outputs generados en `assets-system/build/css`, `assets-system/build/scss` y `assets-system/build/ts`
 
 ## Nota
 
