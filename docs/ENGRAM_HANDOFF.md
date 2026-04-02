@@ -179,6 +179,7 @@ El código del framework en el repo hermano ya implementa:
 - paquetes por rol en `docs/ASSET_REGEN/role_admin_tenant_package.md`, `role_operator_package.md` y `role_approver_package.md`
 - bootstrap técnico del sistema de assets en `docs/ASSET_SYSTEM_BOOTSTRAP.md`
 - workspace/package bootstrap del sistema de assets en `package.json`, `packages/opita-brand-core/` y `packages/opita-brand-ui/`
+- bootstrap de SVG optimization en `config/svgo.config.mjs` y `scripts/optimize-svg.mjs`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma

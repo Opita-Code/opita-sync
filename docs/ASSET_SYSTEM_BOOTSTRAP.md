@@ -10,7 +10,9 @@ Arrancar la base técnica del sistema de assets con una fuente única de tokens,
 - `.gitignore`
 - `assets-system/source/tokens/design-tokens.json`
 - `config/style-dictionary.config.mjs`
+- `config/svgo.config.mjs`
 - `scripts/build-tokens.mjs`
+- `scripts/optimize-svg.mjs`
 - `packages/opita-brand-core/`
 - `packages/opita-brand-ui/`
 - `storybook/.storybook/`
@@ -21,7 +23,7 @@ Arrancar la base técnica del sistema de assets con una fuente única de tokens,
 1. instalar dependencias del workspace
 2. correr `Style Dictionary` y validar outputs generados
 3. completar exports reales en `packages/opita-brand-core`
-4. montar `SVGO` para logos/icons
+4. usar `SVGO` para logos/icons/visuals
 5. conectar logos/icons a Storybook
 6. expandir el package `opita-brand-ui`
 
@@ -38,6 +40,7 @@ Eso permite revisar y ajustar la estructura antes de instalar dependencias o cor
 - `Storybook` disponible
 - build mínimo de tokens ejecutado con éxito
 - outputs generados en `assets-system/build/css`, `assets-system/build/scss` y `assets-system/build/ts`
+- bootstrap de `SVGO` preparado, pero todavía no ejecutado
 
 ## Nota
 
