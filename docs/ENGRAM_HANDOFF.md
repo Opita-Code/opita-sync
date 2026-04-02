@@ -166,6 +166,7 @@ El código del framework en el repo hermano ya implementa:
 - backlog accionable de remediación de assets en `docs/ASSET_REMEDIATION_BACKLOG.md`
 - plan ejecutable de P0 de assets en `docs/ASSET_P0_EXECUTION_PLAN.md`
 - congelación operativa del kit en `docs/ASSET_FREEZE_NOTICE.md`
+- brief de reescritura del núcleo estratégico del kit en `docs/ASSET_P0_STRATEGY_REWRITE_BRIEF.md`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
