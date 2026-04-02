@@ -159,6 +159,7 @@ El código del framework en el repo hermano ya implementa:
 - plan corto de polish del segundo dominio en `docs/SECOND_DOMAIN_POLISH_PLAN.md`
 - brief ejecutivo del segundo dominio en `docs/SECOND_DOMAIN_EXECUTIVE_BRIEF.md`
 - checkpoint del polish del segundo dominio en `docs/SECOND_DOMAIN_POLISH_CHECKPOINT_2026-04-02.md`
+- priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
 
