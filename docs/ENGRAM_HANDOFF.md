@@ -134,6 +134,7 @@ El código del framework en el repo hermano ya implementa:
 - evaluación ejecutiva consolidada en `docs/GLOBAL_PROJECT_EVALUATION_2026-03-31.md`
 - roadmap del próximo milestone en `docs/NEXT_MILESTONE_ROADMAP.md`
 - plan ejecutable de Semana 1 en `docs/NEXT_MILESTONE_WEEK1_PLAN.md`
+- auditoría de Tarea 1 en `docs/ACCESS_PLANE_AUDIT_2026-03-31.md`
 
 ## Observabilidad del segundo dominio
 
