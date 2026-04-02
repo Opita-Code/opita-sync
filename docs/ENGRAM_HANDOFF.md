@@ -157,6 +157,7 @@ El código del framework en el repo hermano ya implementa:
 - rerun de Semana 2 en `docs/WEEK2_ACCESS_RERUN_RESULTS_2026-04-02.md`
 - validación formal del segundo dominio en `docs/SECOND_DOMAIN_VALIDATION_2026-04-02.md`
 - plan corto de polish del segundo dominio en `docs/SECOND_DOMAIN_POLISH_PLAN.md`
+- brief ejecutivo del segundo dominio en `docs/SECOND_DOMAIN_EXECUTIVE_BRIEF.md`
 
 ## AWS / plataforma
 
