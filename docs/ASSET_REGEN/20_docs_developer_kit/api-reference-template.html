@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./docs-theme.css" />
+    <link rel="stylesheet" href="./code-theme.css" />
+  </head>
+  <body>
+    <div class="docs-shell">
+      <article class="docs-content">
+        <h1>Compile governed request</h1>
+        <p>Convert a tenant-scoped request into a governed contract that can later be previewed, approved, inspected and recovered.</p>
+        <h2>Request</h2>
+        <pre>{
+  "request_id": "req_123",
+  "tenant_id": "tenant_123",
+  "requested_capability_id": "capability.execution.default",
+  "objetivo": "apply a governed tenant configuration change"
+}</pre>
+        <h2>Response</h2>
+        <pre>{
+  "contract_id": "contract_123",
+  "execution_id": "exec_123",
+  "correlations": {
+    "tenant_id": "tenant_123",
+    "requested_capability_id": "capability.execution.default"
+  }
+}</pre>
+      </article>
+    </div>
+  </body>
+</html>

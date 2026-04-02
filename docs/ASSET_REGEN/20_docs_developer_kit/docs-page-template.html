@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./docs-theme.css" />
+    <link rel="stylesheet" href="./code-theme.css" />
+  </head>
+  <body>
+    <div class="docs-shell">
+      <div class="docs-grid">
+        <aside class="docs-nav">
+          <img src="../01_logos/png/opita-sync-primary-color-1400w.png" alt="Opita Sync" style="height:32px" />
+          <p>Overview</p>
+          <p>Governed corridor</p>
+          <p>Domains</p>
+          <p>Architecture</p>
+        </aside>
+        <article class="docs-content">
+          <span class="opita-eyebrow">Governed corridor</span>
+          <h1>Proposal, preview and governed execution</h1>
+          <p>Use this template for explainers that show how Opita Sync moves from intent to a governed, inspectable outcome.</p>
+          <div class="callout"><strong>Key idea</strong>: the docs should make the corridor legible and explicit, not make the product look like a free agent.</div>
+          <h2>Example request</h2>
+          <pre>POST /v1/intents/compile
+{
+  "request_id": "req_123",
+  "tenant_id": "tenant_123",
+  "requested_capability_id": "capability.execution.default",
+  "objetivo": "activate a governed tenant change"
+}</pre>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
