@@ -164,6 +164,7 @@ El código del framework en el repo hermano ya implementa:
 - decisión estratégica siguiente en `docs/NEXT_STRATEGIC_MOVE_2026-04-02.md`
 - plan de adopción controlada en `docs/CONTROLLED_ADOPTION_PLAN.md`
 - backlog accionable de remediación de assets en `docs/ASSET_REMEDIATION_BACKLOG.md`
+- plan ejecutable de P0 de assets en `docs/ASSET_P0_EXECUTION_PLAN.md`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
