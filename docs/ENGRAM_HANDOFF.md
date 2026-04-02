@@ -137,6 +137,7 @@ El código del framework en el repo hermano ya implementa:
 - auditoría de Tarea 1 en `docs/ACCESS_PLANE_AUDIT_2026-03-31.md`
 - chequeo de consistencia de estados (Tarea 2) en `docs/ACCESS_STATE_CONSISTENCY_CHECK_2026-03-31.md`
 - chequeo de visibilidad sensible (Tarea 3) en `docs/ACCESS_SENSITIVE_VISIBILITY_CHECK_2026-03-31.md`
+- chequeo de observabilidad (Tarea 4) en `docs/ACCESS_OBSERVABILITY_CHECK_2026-03-31.md`
 
 ## Observabilidad del segundo dominio
 
