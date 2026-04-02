@@ -175,6 +175,7 @@ El código del framework en el repo hermano ya implementa:
 - versión regenerada de starters en `docs/ASSET_REGEN/14_design_system/*` y `docs/ASSET_REGEN/20_docs_developer_kit/*`
 - versión regenerada del storytelling visual en `docs/ASSET_REGEN/19_product_storytelling/*`
 - versión regenerada de sales/partner/press en `docs/ASSET_REGEN/22_sales_enablement/*` y `docs/ASSET_REGEN/23_partner_press_kit/*`
+- paquetes por dominio en `docs/ASSET_REGEN/domain_1_tenant_configuration_package.md` y `docs/ASSET_REGEN/domain_2_access_delegation_package.md`
 - priorización final en `docs/WHAT_NEXT_NOW.md`
 
 ## AWS / plataforma
