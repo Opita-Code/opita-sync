@@ -70,6 +70,15 @@ Usar Conventional Commits:
 - `docs: ...`
 - `chore: ...`
 
+## Nota para Windows + PowerShell
+
+Si lanzás procesos con `Start-Process`, usá `npm.cmd` en lugar de `npm`:
+
+- ✅ `Start-Process -FilePath npm.cmd -ArgumentList 'run storybook:dev'`
+- ❌ `Start-Process -FilePath npm -ArgumentList 'run storybook:dev'`
+
+Motivo: en algunos entornos `npm` resuelve a `npm.ps1` y puede abrirse con la app asociada (por ejemplo Notepad) en lugar de ejecutar el comando.
+
 ## Criterio principal
 
 Si en dos semanas necesitás recordar:

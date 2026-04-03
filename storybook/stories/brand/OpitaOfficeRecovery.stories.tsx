@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { OpitaOfficeDemoPage } from '@opita-code/opita-brand-ui';
+import React from 'react';
+import { OpitaOfficeDemoPage, RecoveryWarRoomPage } from '@opita-code/opita-brand-ui';
 import { runOrderDeviationRecoveryScenario } from '@opita-code/opita-office-sandbox';
 
 const scenario = runOrderDeviationRecoveryScenario('2026-04-03');
@@ -99,4 +100,25 @@ export const DeviationAndRecovery: Story = {
     executionSummary: `${scenario.initialAgentAction.executionSummary} Recovery: ${scenario.recoveryAgentAction.executionSummary}`,
     recommendedNextAction: scenario.recoveryAgentAction.recommendedNextAction
   }
+};
+
+export const RecoveryWarRoom: Story = {
+  render: () => (
+    <RecoveryWarRoomPage
+      brand="Opita Sync"
+      navLinks={['War room', 'Deviation', 'Recovery', 'Audit']}
+      deviationFindings={scenario.deviation.findings}
+      deviationRecommendation={scenario.deviation.recommendation}
+      initialExecutionSummary={scenario.initialAgentAction.executionSummary}
+      recoveryProposal={scenario.recoveryAgentAction.proposal}
+      recoveryExecutionSummary={scenario.recoveryAgentAction.executionSummary}
+      recoveryNextAction={scenario.recoveryAgentAction.recommendedNextAction}
+      beforeItems={formatOrderState('Order baseline', scenario.orderBefore)}
+      afterRecoveryItems={formatOrderState('Order stabilized', scenario.orderAfterRecovery)}
+      verificationFindings={scenario.verificationAfterRecovery.findings}
+      initialIntent={scenario.initialAgentAction.intent}
+      initialProposal={scenario.initialAgentAction.proposal}
+      finalVerificationSummary={scenario.verificationAfterRecovery.summary}
+    />
+  )
 };

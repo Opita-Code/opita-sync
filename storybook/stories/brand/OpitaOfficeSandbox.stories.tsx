@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { OpitaOfficeDemoPage } from '@opita-code/opita-brand-ui';
+import { ExecutiveControlRoomPage, OpitaOfficeDemoPage } from '@opita-code/opita-brand-ui';
 import { runOrderRecoveryScenario } from '@opita-code/opita-office-sandbox';
 
 const scenario = runOrderRecoveryScenario('2026-04-03');
@@ -73,6 +73,29 @@ export const OrderRecoveryFlow: Story = {
       proposal={scenario.agentAction.proposal}
       executionSummary={scenario.agentAction.executionSummary}
       recommendedNextAction={scenario.agentAction.recommendedNextAction}
+    />
+  )
+};
+
+export const ExecutiveControlRoom: Story = {
+  render: () => (
+    <ExecutiveControlRoomPage
+      brand="Opita Sync"
+      navLinks={['Control room', 'Evidence', 'Governance', 'Verify']}
+      beforeItems={formatOrderState('Order before change', scenario.orderBefore)}
+      afterItems={formatOrderState('Order after change', scenario.orderAfter)}
+      intent={scenario.agentAction.intent}
+      proposal={scenario.agentAction.proposal}
+      executionSummary={scenario.agentAction.executionSummary}
+      recommendedNextAction={scenario.agentAction.recommendedNextAction}
+      verificationSummary={scenario.verification.summary}
+      verificationFindings={scenario.verification.findings}
+      taskId={scenario.taskAfter.id}
+      taskStatusBefore={scenario.taskBefore.status}
+      taskStatusAfter={scenario.taskAfter.status}
+      taskSensitivity={scenario.taskAfter.sensitivity}
+      latestTaskComment={scenario.taskAfter.comments[scenario.taskAfter.comments.length - 1]}
+      orderBeforeId={scenario.orderBefore.id}
     />
   )
 };

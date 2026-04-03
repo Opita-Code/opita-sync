@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { opitaOfficeDemoLandingContent, opitaOfficeMobileDemoFlowContent } from '@opita-code/opita-brand-core';
-import { Button, MobileDemoFlowPage, OpitaOfficeDemoPage } from '@opita-code/opita-brand-ui';
+import { Button, ExecutiveControlRoomPage, MobileDemoFlowPage, OpitaOfficeDemoPage, RecoveryWarRoomPage } from '@opita-code/opita-brand-ui';
 import { opitaOfficeStoragePlan, runOrderDeviationRecoveryScenario, runOrderRecoveryScenario } from '@opita-code/opita-office-sandbox';
 
 const scenario = runOrderRecoveryScenario('2026-04-03');
@@ -152,81 +152,89 @@ export function App() {
 
   return (
     <AppChrome businessDate={scenario.businessDate} mode={mode} surface={surface} onModeChange={setMode} onSurfaceChange={setSurface}>
-      <OpitaOfficeDemoPage
-        brand="Opita Sync"
-        navLinks={['Demo', 'Why now', 'Opita Office', 'Audit']}
-        hero={{
-          eyebrow: opitaOfficeDemoLandingContent.hero.eyebrow,
-          title:
-            surface === 'landing'
-              ? opitaOfficeDemoLandingContent.hero.title
-              : surface === 'recovery'
-                ? 'See how the demo tenant detects a weak intermediate state and stabilizes it.'
-              : 'Review the governed scenario running over the Opita Office demo tenant.',
-          subtitle:
-            surface === 'landing'
-              ? opitaOfficeDemoLandingContent.hero.subtitle
-              : surface === 'recovery'
-                ? 'This preview emphasizes the recovery path: the system recognizes a deviation after a partial fix, recommends a stronger action and verifies the stabilized state.'
-              : 'This preview isolates the main scenario so the operator or executive can focus on before/after, governance, verification and next-best-action over the sandbox.',
-          primaryCtaLabel: opitaOfficeDemoLandingContent.hero.primaryCta,
-          secondaryCtaLabel: opitaOfficeDemoLandingContent.hero.secondaryCta
-        }}
-        summaryCards={opitaOfficeDemoLandingContent.summaryCards}
-        scenarioThesis={opitaOfficeDemoLandingContent.scenarioThesis}
-        whyNowItems={opitaOfficeDemoLandingContent.whyNow}
-        whyOpitaSyncItems={opitaOfficeDemoLandingContent.whyOpitaSync}
-        trustLayerItems={opitaOfficeDemoLandingContent.trustLayer}
-        afterTheCallItems={opitaOfficeDemoLandingContent.afterTheCall}
-        beforePanel={{
-          title: 'Before',
-          items: formatOrderState(
-            surface === 'recovery' ? 'Order before first action' : 'Order before change',
-            surface === 'recovery' ? recoveryScenario.orderBefore : scenario.orderBefore
-          )
-        }}
-        afterPanel={{
-          title: surface === 'recovery' ? 'After recovery' : 'After',
-          items: formatOrderState(
-            surface === 'recovery' ? 'Order after recovery' : 'Order after change',
-            surface === 'recovery' ? recoveryScenario.orderAfterRecovery : scenario.orderAfter
-          ),
-          tone: 'muted'
-        }}
-        governancePanel={{
-          title: surface === 'recovery' ? 'Deviation advisor' : 'Approval task',
-          items:
-            surface === 'recovery'
-              ? [recoveryScenario.deviation.recommendation, ...recoveryScenario.deviation.findings]
-              : [
-                  `task id: ${scenario.taskAfter.id}`,
-                  `sensitivity: ${scenario.taskAfter.sensitivity}`,
-                  `status before: ${scenario.taskBefore.status}`,
-                  `status after: ${scenario.taskAfter.status}`,
-                  `latest comment: ${scenario.taskAfter.comments[scenario.taskAfter.comments.length - 1]}`
-                ]
-        }}
-        verificationPanel={{
-          title: surface === 'recovery' ? 'Verification after recovery' : 'Verification',
-          items:
-            surface === 'recovery'
-              ? [recoveryScenario.verificationAfterRecovery.summary, ...recoveryScenario.verificationAfterRecovery.findings]
-              : [scenario.verification.summary, ...scenario.verification.findings],
-          tone: 'muted'
-        }}
-        intent={surface === 'recovery' ? recoveryScenario.initialAgentAction.intent : scenario.agentAction.intent}
-        proposal={
-          surface === 'recovery'
-            ? `${recoveryScenario.initialAgentAction.proposal} Recovery proposal: ${recoveryScenario.recoveryAgentAction.proposal}`
-            : scenario.agentAction.proposal
-        }
-        executionSummary={
-          surface === 'recovery'
-            ? `${recoveryScenario.initialAgentAction.executionSummary} Recovery: ${recoveryScenario.recoveryAgentAction.executionSummary}`
-            : scenario.agentAction.executionSummary
-        }
-        recommendedNextAction={surface === 'recovery' ? recoveryScenario.recoveryAgentAction.recommendedNextAction : scenario.agentAction.recommendedNextAction}
-      />
+      {surface === 'scenario' ? (
+        <ExecutiveControlRoomPage
+          brand="Opita Sync"
+          navLinks={['Control room', 'Evidence', 'Governance', 'Verify']}
+          beforeItems={formatOrderState('Order before change', scenario.orderBefore)}
+          afterItems={formatOrderState('Order after change', scenario.orderAfter)}
+          intent={scenario.agentAction.intent}
+          proposal={scenario.agentAction.proposal}
+          executionSummary={scenario.agentAction.executionSummary}
+          recommendedNextAction={scenario.agentAction.recommendedNextAction}
+          verificationSummary={scenario.verification.summary}
+          verificationFindings={scenario.verification.findings}
+          taskId={scenario.taskAfter.id}
+          taskStatusBefore={scenario.taskBefore.status}
+          taskStatusAfter={scenario.taskAfter.status}
+          taskSensitivity={scenario.taskAfter.sensitivity}
+          latestTaskComment={scenario.taskAfter.comments[scenario.taskAfter.comments.length - 1]}
+          orderBeforeId={scenario.orderBefore.id}
+        />
+      ) : surface === 'recovery' ? (
+        <RecoveryWarRoomPage
+          brand="Opita Sync"
+          navLinks={['War room', 'Deviation', 'Recovery', 'Audit']}
+          deviationFindings={recoveryScenario.deviation.findings}
+          deviationRecommendation={recoveryScenario.deviation.recommendation}
+          initialExecutionSummary={recoveryScenario.initialAgentAction.executionSummary}
+          recoveryProposal={recoveryScenario.recoveryAgentAction.proposal}
+          recoveryExecutionSummary={recoveryScenario.recoveryAgentAction.executionSummary}
+          recoveryNextAction={recoveryScenario.recoveryAgentAction.recommendedNextAction}
+          beforeItems={formatOrderState('Order baseline', recoveryScenario.orderBefore)}
+          afterRecoveryItems={formatOrderState('Order stabilized', recoveryScenario.orderAfterRecovery)}
+          verificationFindings={recoveryScenario.verificationAfterRecovery.findings}
+          initialIntent={recoveryScenario.initialAgentAction.intent}
+          initialProposal={recoveryScenario.initialAgentAction.proposal}
+          finalVerificationSummary={recoveryScenario.verificationAfterRecovery.summary}
+        />
+      ) : (
+        <OpitaOfficeDemoPage
+          brand="Opita Sync"
+          navLinks={['Demo', 'Why now', 'Opita Office', 'Audit']}
+          hero={{
+            eyebrow: opitaOfficeDemoLandingContent.hero.eyebrow,
+            title: opitaOfficeDemoLandingContent.hero.title,
+            subtitle: opitaOfficeDemoLandingContent.hero.subtitle,
+            primaryCtaLabel: opitaOfficeDemoLandingContent.hero.primaryCta,
+            secondaryCtaLabel: opitaOfficeDemoLandingContent.hero.secondaryCta
+          }}
+          summaryCards={opitaOfficeDemoLandingContent.summaryCards}
+          scenarioThesis={opitaOfficeDemoLandingContent.scenarioThesis}
+          whyNowItems={opitaOfficeDemoLandingContent.whyNow}
+          whyOpitaSyncItems={opitaOfficeDemoLandingContent.whyOpitaSync}
+          trustLayerItems={opitaOfficeDemoLandingContent.trustLayer}
+          afterTheCallItems={opitaOfficeDemoLandingContent.afterTheCall}
+          beforePanel={{
+            title: 'Before',
+            items: formatOrderState('Order before change', scenario.orderBefore)
+          }}
+          afterPanel={{
+            title: 'After',
+            items: formatOrderState('Order after change', scenario.orderAfter),
+            tone: 'muted'
+          }}
+          governancePanel={{
+            title: 'Approval task',
+            items: [
+              `task id: ${scenario.taskAfter.id}`,
+              `sensitivity: ${scenario.taskAfter.sensitivity}`,
+              `status before: ${scenario.taskBefore.status}`,
+              `status after: ${scenario.taskAfter.status}`,
+              `latest comment: ${scenario.taskAfter.comments[scenario.taskAfter.comments.length - 1]}`
+            ]
+          }}
+          verificationPanel={{
+            title: 'Verification',
+            items: [scenario.verification.summary, ...scenario.verification.findings],
+            tone: 'muted'
+          }}
+          intent={scenario.agentAction.intent}
+          proposal={scenario.agentAction.proposal}
+          executionSummary={scenario.agentAction.executionSummary}
+          recommendedNextAction={scenario.agentAction.recommendedNextAction}
+        />
+      )}
     </AppChrome>
   );
 }
