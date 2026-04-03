@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '../../../packages/opita-brand-ui/src/Button';
+import { Button } from '@opita-code/opita-brand-ui';
 
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
