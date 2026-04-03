@@ -1,0 +1,60 @@
+name: Feature request
+description: Proponer una mejora o nueva capacidad del repo
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Usá este template para cambios de producto, DX, Storybook, assets o governance del repo.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight
+      options:
+        - label: Busqué issues existentes y no encontré un duplicado claro
+          required: true
+        - label: Este issue describe un cambio concreto y no una pregunta abierta
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Qué duele hoy o qué falta
+      placeholder: El repo no tiene...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solución propuesta
+      description: Qué debería existir o cambiar
+      placeholder: Agregar...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área afectada
+      options:
+        - Assets / Storybook
+        - UI / packages
+        - Documentation
+        - Governance / GitHub
+        - Framework boundary
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Links, decisiones previas, restricciones o tradeoffs
+    validations:
+      required: false
