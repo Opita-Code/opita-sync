@@ -204,3 +204,44 @@ El código del framework en el repo hermano ya implementa:
 La base local de Engram no se sincroniza sola con `git fetch`.
 
 Este archivo existe justamente para serializar la memoria útil del proyecto y poder continuar en otra máquina sin arrancar ciego.
+
+## Update 2026-04-03 — demo tenant runtime + storytelling variance
+
+### Qué se agregó
+
+- app runtime web real en `apps/opita-demo-web/` estabilizada para servir `index.html` del app.
+- nuevo sandbox package `packages/opita-office-sandbox/` para escenario de recuperación y desvío.
+- stories demo en Storybook para landing, escenario sandbox, mobile flow y recovery.
+- dos composiciones nuevas reutilizables en `opita-brand-ui` para evitar páginas “iguales con otro copy”:
+  - `ExecutiveControlRoomPage`
+  - `RecoveryWarRoomPage`
+
+### Problemas detectados y resueltos
+
+- `npm run demo:dev` devolvía `404` en `/` por root de Vite en monorepo.
+  - fix: `apps/opita-demo-web/vite.config.ts` ahora define `root: __dirname`.
+- Storybook fallaba import dinámico por tokens no generados.
+  - fix de continuidad: existe `assets-system/build/ts/tokens.ts` para resolver import en `packages/opita-brand-core/src/tokens.ts`.
+- en Windows + PowerShell, `Start-Process -FilePath npm` puede abrir `npm.ps1` en Notepad.
+  - guideline: usar `npm.cmd` (documentado en `CONTRIBUTING.md`).
+
+### Estado de branch y PR
+
+- branch activo: `feat/demo-runtime-recovery`
+- PR abierta: `https://github.com/Opita-Code/opita-sync/pull/10`
+- issue relacionada: `#9`
+
+### Validación operativa mínima hecha
+
+- demo runtime responde `200` en `http://localhost:4173/`.
+- módulos de stories demo responden `200` en `http://localhost:6006/stories/brand/*`.
+
+### Archivos clave para retomar rápido
+
+- `apps/opita-demo-web/src/App.tsx` — surface switch (landing/scenario/recovery) con composiciones diferenciadas.
+- `apps/opita-demo-web/vite.config.ts` — fix de root para monorepo.
+- `packages/opita-brand-ui/src/ExecutiveControlRoomPage.tsx` — composición “control room”.
+- `packages/opita-brand-ui/src/RecoveryWarRoomPage.tsx` — composición “war room recovery”.
+- `storybook/stories/brand/OpitaOfficeSandbox.stories.tsx` — story de escenario con composición nueva.
+- `storybook/stories/brand/OpitaOfficeRecovery.stories.tsx` — story de recovery con composición nueva.
+- `docs/AMBITION_DEMO_ROADMAP.md` y `docs/AMBITION_DEMO_SPEC.md` — guía de dirección producto/demo.

@@ -2,3 +2,7 @@ node_modules/
 dist/
 storybook-static/
 assets-system/build/
+demo-dev.log
+demo-dev.err.log
+storybook-dev.log
+storybook-dev.err.log

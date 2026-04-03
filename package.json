@@ -3,9 +3,11 @@
   "private": true,
   "type": "module",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
+    "demo:dev": "vite --config ./apps/opita-demo-web/vite.config.ts",
     "tokens:build": "node ./scripts/build-tokens.mjs",
     "svg:build": "node ./scripts/optimize-svg.mjs",
     "storybook:dev": "storybook dev -p 6006 -c ./storybook/.storybook",
@@ -15,9 +17,11 @@
     "@storybook/addon-a11y": "^8.6.14",
     "@storybook/addon-docs": "^8.6.14",
     "@storybook/react-vite": "^8.6.14",
+    "@vitejs/plugin-react": "^4.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "style-dictionary": "^4.1.0",
-    "svgo": "^3.3.2"
+    "svgo": "^3.3.2",
+    "vite": "^5.4.19"
   }
 }

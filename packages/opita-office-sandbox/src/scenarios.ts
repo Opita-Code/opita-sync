@@ -1,5 +1,5 @@
 import type { OpitaOfficeAgentAction, OpitaOfficeOrder, OpitaOfficeTask } from './models';
-import { OpitaOfficeSandboxStore, verifyOrderOperationalImprovement } from './runtime';
+import { OpitaOfficeSandboxStore, assessOrderDeviation, verifyOrderOperationalImprovement } from './runtime';
 
 export type OrderRecoveryScenarioResult = {
   businessDate: string;
@@ -9,6 +9,17 @@ export type OrderRecoveryScenarioResult = {
   taskAfter: OpitaOfficeTask;
   verification: ReturnType<typeof verifyOrderOperationalImprovement>;
   agentAction: OpitaOfficeAgentAction;
+};
+
+export type OrderDeviationRecoveryScenarioResult = {
+  businessDate: string;
+  orderBefore: OpitaOfficeOrder;
+  orderAfterInitialChange: OpitaOfficeOrder;
+  orderAfterRecovery: OpitaOfficeOrder;
+  deviation: ReturnType<typeof assessOrderDeviation>;
+  verificationAfterRecovery: ReturnType<typeof verifyOrderOperationalImprovement>;
+  initialAgentAction: OpitaOfficeAgentAction;
+  recoveryAgentAction: OpitaOfficeAgentAction;
 };
 
 export function runOrderRecoveryScenario(businessDate: string): OrderRecoveryScenarioResult {
@@ -48,5 +59,69 @@ export function runOrderRecoveryScenario(businessDate: string): OrderRecoverySce
     taskAfter: task.after,
     verification,
     agentAction
+  };
+}
+
+export function runOrderDeviationRecoveryScenario(businessDate: string): OrderDeviationRecoveryScenarioResult {
+  const store = new OpitaOfficeSandboxStore(businessDate);
+  const changedAt = `${businessDate}T11:10:00Z`;
+  const recoveryAt = `${businessDate}T11:18:00Z`;
+
+  const firstChange = store.patchOrder(
+    'ord_1001',
+    {
+      owner: 'Temporary Bot',
+      status: 'pending',
+      priority: 'urgent'
+    },
+    changedAt
+  );
+
+  const deviation = assessOrderDeviation(firstChange.after);
+
+  const initialAgentAction = store.recordAgentAction({
+    intent: 'Corregir rápidamente una orden urgente bloqueada para que deje de estar detenida.',
+    proposal:
+      'Mover la orden fuera de blocked y asignar un owner temporal mientras se estabiliza el flujo.',
+    decision: 'Cambio inicial ejecutado como corrección parcial para liberar el cuello de botella inmediato.',
+    executionSummary:
+      'The order moved from blocked to pending with owner Temporary Bot, but retained urgent priority.',
+    verificationSummary: deviation.recommendation,
+    recommendedNextAction: 'Run recovery to replace the temporary owner and normalize priority before considering the order stable.'
+  });
+
+  const recovery = store.patchOrder(
+    'ord_1001',
+    {
+      owner: 'Lucía',
+      status: 'approved',
+      priority: 'high'
+    },
+    recoveryAt
+  );
+
+  const verificationAfterRecovery = verifyOrderOperationalImprovement(firstChange.before, recovery.after);
+
+  const recoveryAgentAction = store.recordAgentAction({
+    intent: 'Cerrar el desvío detectado después de la corrección parcial.',
+    proposal:
+      'Aplicar recovery sobre la orden: owner estable, prioridad normalizada y estado coherente con el flujo aprobado.',
+    decision: 'Recovery path executed after deviation detection and review of the partial correction.',
+    executionSummary:
+      'The order was stabilized with owner Lucía, status approved and priority reduced to high.',
+    verificationSummary: verificationAfterRecovery.summary,
+    recommendedNextAction:
+      'Inspect whether similar urgent orders still rely on temporary ownership and open a remediation sweep if needed.'
+  });
+
+  return {
+    businessDate,
+    orderBefore: firstChange.before,
+    orderAfterInitialChange: firstChange.after,
+    orderAfterRecovery: recovery.after,
+    deviation,
+    verificationAfterRecovery,
+    initialAgentAction,
+    recoveryAgentAction
   };
 }

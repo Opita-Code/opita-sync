@@ -10,6 +10,7 @@
     "baseUrl": "."
   },
   "include": [
+    "apps/**/*",
     "packages/**/*",
     "storybook/**/*"
   ]

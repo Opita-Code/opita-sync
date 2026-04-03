@@ -19,6 +19,12 @@ export type VerificationResult = {
   findings: string[];
 };
 
+export type DeviationAssessment = {
+  hasDeviation: boolean;
+  findings: string[];
+  recommendation: string;
+};
+
 export type RecordAgentActionInput = Omit<OpitaOfficeAgentAction, 'id' | 'createdAt'> & {
   createdAt?: string;
 };
@@ -50,6 +56,31 @@ export function verifyOrderOperationalImprovement(before: OpitaOfficeOrder, afte
     summary: improved
       ? `Se verificó mejora operativa: ${findings.join(', ')}.`
       : 'No se detectó mejora operativa clara en la orden después del cambio.'
+  };
+}
+
+export function assessOrderDeviation(order: OpitaOfficeOrder): DeviationAssessment {
+  const findings: string[] = [];
+
+  if (order.owner === 'Unassigned' || order.owner === 'Temporary Bot') {
+    findings.push('la orden mantiene un owner no confiable para operación continua');
+  }
+
+  if (order.priority === 'urgent' && order.status !== 'blocked') {
+    findings.push('la prioridad sigue en urgent aun después de una corrección parcial');
+  }
+
+  if (order.status === 'pending' && order.owner !== 'Unassigned' && order.priority === 'urgent') {
+    findings.push('la orden avanzó, pero todavía conserva una combinación operativa desviada');
+  }
+
+  return {
+    hasDeviation: findings.length > 0,
+    findings,
+    recommendation:
+      findings.length > 0
+        ? 'Aplicar un recovery path: asignar owner estable, normalizar prioridad y cerrar el cambio con un estado operativo consistente.'
+        : 'No se detectan desvíos relevantes en la orden.'
   };
 }
 
