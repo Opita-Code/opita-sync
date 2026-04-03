@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta = {
-  title: 'Brand/Optimized Logos'
+  title: 'Brand/Foundations/Optimized Logos'
 };
 
 export default meta;

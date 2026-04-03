@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta = {
-  title: 'Brand/Optimized Icons'
+  title: 'Brand/Foundations/Optimized Icons'
 };
 
 export default meta;
