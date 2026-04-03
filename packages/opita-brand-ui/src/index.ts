@@ -25,6 +25,8 @@ export * from './PageShell';
 export * from './DocsPage';
 export * from './DomainNarrativePage';
 export * from './LandingPage';
+export * from './MobileDemoFlowPage';
+export * from './OpitaOfficeDemoPage';
 export * from './OverviewNarrativePage';
 export * from './RoleNarrativePage';
 export * from './StoryNarrativePage';
