@@ -20,6 +20,9 @@ La frase rectora es:
 - `docs/OPITA_SYNC_IMPLEMENTATION_READY.md` — paquete implementation-ready del producto
 - `docs/OPITA_SYNC_SPEC_MODEL.md` — modelo de spec para gap closure
 - `specs/productization-gap-closure/` — specs normativas del producto sobre OSF
+- `packages/opita-brand-core` — contenido reusable y serializable del sistema de assets
+- `packages/opita-brand-ui` — foundations, componentes, secciones, páginas y templates editoriales
+- `storybook/` — showcase navegable del asset system actual
 
 ## Qué NO contiene este repo
 
@@ -39,6 +42,40 @@ La separación con OSF es deliberada:
 
 - el producto define qué debe existir
 - el framework define cómo se gobierna y ejecuta
+
+## Asset system actual
+
+Este repo hoy también contiene un **asset system inicial** para posicionamiento, storytelling y surfaces de producto.
+
+Separación actual:
+
+- `packages/opita-brand-core` = contenido reusable
+- `packages/opita-brand-ui` = UI reusable
+- `storybook/` = surface viva para revisar el sistema
+- `docs/ASSET_REGEN_INTEGRATION_PLAN.md` = criterio de integración desde `ASSET_REGEN`
+
+Esto no reemplaza el source of truth del producto.
+
+Lo acompaña.
+
+El objetivo es que el material regenerado y narrativo deje de vivir como docs sueltas y pase a existir como sistema reusable.
+
+Guía rápida de uso:
+
+- `docs/ASSET_SYSTEM_USAGE.md`
+
+Ejemplo conceptual de consumo:
+
+```ts
+import { homepageHeroContent, domainContents } from '@opita-code/opita-brand-core';
+import { Hero, DomainNarrativePage, SalesEmailTemplate } from '@opita-code/opita-brand-ui';
+```
+
+La regla correcta es:
+
+- contenido desde `brand-core`
+- UI desde `brand-ui`
+- review visual y narrativa desde `storybook`
 
 ## Flujo del producto
 
